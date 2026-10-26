@@ -1,0 +1,9 @@
+{
+  "id": "kiro-credits-bar",
+  "name": "Kiro Credits Bar",
+  "version": "1.0.0",
+  "minAppVersion": "1.0.0",
+  "description": "Zeigt den Kiro-Credit-Verbrauch als Skala (0–1000) mit Prozentwert permanent in der Statusleiste.",
+  "author": "Holger",
+  "isDesktopOnly": false
+}

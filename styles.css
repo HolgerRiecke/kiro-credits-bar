@@ -1,0 +1,63 @@
+.kiro-credits-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.kiro-credits-bar .kcb-label {
+  font-weight: 600;
+}
+
+.kiro-credits-bar .kcb-scale {
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+/* Skala: Track mit Teilstrichen bei 25 / 50 / 75 % */
+.kiro-credits-bar .kcb-track {
+  position: relative;
+  width: 150px;
+  height: 9px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--background-modifier-border);
+}
+
+.kiro-credits-bar .kcb-track::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to right, var(--background-primary) 1px, transparent 1px);
+  background-size: 25% 100%;
+}
+
+.kiro-credits-bar .kcb-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.kiro-credits-bar.kcb-ok .kcb-fill {
+  background: linear-gradient(90deg, #34d399, #059669);
+}
+
+.kiro-credits-bar.kcb-warn .kcb-fill {
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+}
+
+.kiro-credits-bar.kcb-crit .kcb-fill {
+  background: linear-gradient(90deg, #f87171, #dc2626);
+}
+
+.kiro-credits-bar .kcb-pct {
+  min-width: 3.2em;
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.kiro-credits-bar.kcb-empty .kcb-pct {
+  color: var(--text-faint);
+}

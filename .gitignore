@@ -1,0 +1,9 @@
+# Nutzerspezifische Laufzeitdaten – nicht ins Repo
+usage.json
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
