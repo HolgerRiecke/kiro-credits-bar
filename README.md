@@ -3,7 +3,13 @@
 Eine Obsidian-Statusleiste, die den Credit-Verbrauch der **Kiro CLI** als Skala
 (0–1000) mit Prozentwert permanent unten in Obsidian anzeigt.
 
-![Statusleiste: Kiro 0 ──────── 1000  8 %](docs/screenshot.png)
+So sieht die Leiste unten in Obsidian aus:
+
+```
+Kiro  0 ▓▓▓▓▓░░░░░░░░░░░░░░░░ 1000  25 %
+```
+
+(grün < 70 %, gelb ab 70 %, rot ab 90 %; Klick = sofort neu einlesen)
 
 Das Projekt besteht aus zwei Teilen:
 
